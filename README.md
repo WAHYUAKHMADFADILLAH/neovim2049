@@ -1,5 +1,3 @@
-Berikut adalah template README yang menarik untuk personal repository Neovim Anda:
-
 ---
 
 # Neovim2049 - Personal Neovim Configuration
@@ -53,28 +51,111 @@ This configuration uses [Packer.nvim](https://github.com/wbthomason/packer.nvim)
 
 Here are some of the key plugins that power this setup:
 
-- **[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)**: Better syntax highlighting and parsing.
-- **[telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)**: Fuzzy finder for file navigation and searching.
-- **[lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)**: A fast and customizable statusline.
-- **[gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)**: Git integration for showing changes in the gutter.
-- **[nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)**: Easy setup for language servers.
+.
+├── .git                   # Git configuration files
+└── lua                    # Lua configuration files
+    ├── core               # Core settings and configurations
+    └── plugins            # Plugin configurations
+        ├── alpha.lua      # Startup screen configuration
+        ├── autocompletion.lua # Autocompletion settings
+        ├── bufferline.lua  # Bufferline configuration
+        ├── colortheme.lua  # Color theme settings
+        ├── comment.lua     # Commenting functionality
+        ├── gitsigns.lua    # Git integration
+        ├── indent-blankline.lua # Indentation guides
+        ├── lsp.lua         # Language Server Protocol (LSP) settings
+        ├── lualine.lua     # Status line configuration
+        ├── misc.lua        # Miscellaneous settings
+        ├── none-ls.lua     # Non-LSP related configurations
+        ├── nvimtree.lua     # NvimTree file explorer settings
+        ├── telescope.lua    # Telescope (fuzzy finder) configuration
+        └── treesitter.lua   # Treesitter syntax highlighting
+
 
 For a complete list of plugins, check out the `plugins.lua` file.
 
 ## 🧑‍💻 Custom Key Mappings
 
-To enhance productivity, I have set up some custom key mappings. Below are a few of my favorites:
+---
 
-- **File Navigation**: `Ctrl+p` for fuzzy file search.
-- **Buffer Management**: `Ctrl+Tab` to cycle through buffers.
-- **Code Navigation**: `gd` to go to definition, `gr` to find references.
-- **Window Management**: `Ctrl+w` to navigate between windows.
+# - Key Mappings and Configuration
+## 🎯 Key Features and Shortcuts
 
-Feel free to modify them to fit your workflow!
+### General Leader Key
 
+- **Leader key**: Space (`<Leader>`)
+- **Local leader**: Space (`<LocalLeader>`)
+
+### 🗂 File Navigation
+
+- `<Leader>e` : Toggle **NvimTree** (file explorer)
+- `<Leader>f` : Focus on **NvimTree**
+- `<Leader>n` : Find the current file in **NvimTree**
+- `<Leader>c` : Collapse **NvimTree** directories
+
+### 💾 Save and Quit
+
+- `<C-s>` : Save current file
+- `<Leader>sn` : Save without triggering auto-formatting
+- `<C-q>` : Quit the current file
+
+### 🧹 Buffer and Window Management
+
+- **Buffers**:
+  - `<Tab>` : Go to next buffer
+  - `<S-Tab>` : Go to previous buffer
+  - `<Leader>x` : Close current buffer
+  - `<Leader>b` : Open a new buffer
+  
+- **Window Management**:
+  - `<Leader>v` : Split window vertically
+  - `<Leader>h` : Split window horizontally
+  - `<Leader>se` : Make split windows equal in size
+  - `<Leader>xs` : Close the current split window
+  
+- **Navigation**:
+  - `<C-h>`, `<C-j>`, `<C-k>`, `<C-l>` : Navigate between window splits
+
+### 🖥️ Tab Management
+
+- `<Leader>to` : Open a new tab
+- `<Leader>tx` : Close current tab
+- `<Leader>tn` : Go to next tab
+- `<Leader>tp` : Go to previous tab
+
+### 🔍 Search and Replace
+
+- `<Leader>s` : Quickly search and replace the word under the cursor in the entire file.
+
+### 🌟 Advanced Features
+
+- **Yank Highlight**: Highlight yanked (copied) text for better visual feedback.
+- **Resizing Windows**:
+  - Use arrow keys to adjust the size of the current window.
+  
+- **Diagnostics**:
+  - `[d` : Go to previous diagnostic message
+  - `]d` : Go to next diagnostic message
+  - `<Leader>d` : Open floating diagnostic window
+  - `<Leader>q` : Open diagnostics list
+
+### 🔧 Additional Handy Key Mappings
+
+- **Scroll and Center**: Vertical scroll (`<C-u>`, `<C-d>`) while keeping the cursor centered.
+- **Visual Mode Enhancements**:
+  - Stay in indent mode (`<`, `>`) while keeping selection.
+  - Keep last yanked item when pasting (`p`).
+
+---
+
+This configuration is designed to be flexible and easy to extend. You can clone this repository and modify it to suit your specific workflow. Feel free to explore the `init.lua` file and customize further!
+
+Enjoy coding with Neovim! 🚀
+
+---
 ## 🎨 Themes and Appearance
 
-I'm using the `gruvbox` colorscheme with a few tweaks to suit my personal taste. If you'd like to change the theme, simply update the `colorscheme` option in `init.lua` with your favorite one.
+I'm using the `rosepine` colorscheme with a few tweaks to suit my personal taste. If you'd like to change the theme, simply update the `colorscheme` option in `init.lua` with your favorite one.
 
 ## 💬 Feedback & Contribution
 
@@ -86,4 +167,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Enjoy coding with Neovim! 🚀
+cihuyyyyyy! 🚀
