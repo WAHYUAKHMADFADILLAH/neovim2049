@@ -54,25 +54,31 @@ This configuration uses Lazy.nvim for managing plugins. To install or update any
 Here are some of the key plugins that power this setup:
 
 ```
-.
+```markdown
+## 📁 Directory Structure
+
+```
+~/.config/nvim/
 ├── .git
 └── lua
     ├── core
+    │   ├── keymaps.lua      # Keybinding configurations
+    │   └── options.lua      # Neovim options
     └── plugins
-        ├── alpha.lua
-        ├── autocompletion.lua
-        ├── bufferline.lua
-        ├── colortheme.lua
-        ├── comment.lua
-        ├── gitsigns.lua
-        ├── indent-blankline.lua
-        ├── lsp.lua
-        ├── lualine.lua
-        ├── misc.lua
-        ├── none-ls.lua
-        ├── nvimtree.lua
-        ├── telescope.lua
-        └── treesitter.lua
+        ├── alpha.lua        # Dashboard plugin
+        ├── autocompletion.lua  # Autocompletion settings
+        ├── bufferline.lua   # Bufferline for tab management
+        ├── colortheme.lua   # Colorscheme configurations
+        ├── comment.lua      # Commenting functionality
+        ├── gitsigns.lua     # Git integration plugin
+        ├── indent-blankline.lua  # Indentation guides
+        ├── lsp.lua          # Language Server Protocol settings
+        ├── lualine.lua      # Statusline configuration
+        ├── misc.lua         # Miscellaneous settings
+        ├── none-ls.lua      # Null-ls configuration
+        ├── nvimtree.lua     # File explorer configuration
+        ├── telescope.lua    # Fuzzy finder settings
+        └── treesitter.lua   # Treesitter configurations
 ```
 For a complete list of plugins, check out the `plugins.lua` file.
 
