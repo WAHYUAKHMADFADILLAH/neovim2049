@@ -1,178 +1,102 @@
 ---
 
-# Neovim2049 - Personal Neovim Configuration
+# Neovim2049 - Custom Neovim Setup 🚀
 
-Welcome to my personal Neovim setup! 🎉 This repository is home to my custom configuration for Neovim, designed to boost productivity and make coding more enjoyable. It's heavily customized with plugins, key mappings, and features tailored for my workflow as a software developer and Linux enthusiast.
-
+Welcome to **Neovim2049**—my highly optimized and personalized Neovim configuration! This setup is designed to supercharge your productivity while coding and bring a visually appealing, modern look to your development environment. Perfect for developers, Linux enthusiasts, and power users alike.
 
 ## ✨ Features
 
-- **Lightning-fast startup** ⏩: Optimized for speed with lazy loading of plugins.
-- **Modern UI** 🌟: Beautiful colorschemes and sleek interface tweaks for better aesthetics.
-- **LSP Integration** 🔧: Full support for LSP, autocompletion, and diagnostics via `nvim-lspconfig`.
-- **Git Integration** 🛠️: Seamless Git experience with powerful plugins like `vim-fugitive` and `gitsigns`.
-- **File Management** 📂: Fast file navigation with `telescope.nvim` and `nvim-tree`.
-- **Statusline** ⚡: Customized statusline using `lualine.nvim` for better visibility and style.
-- **Keybindings** ⌨️: Efficient key mappings to navigate, edit, and manage files faster.
-- **Lazy Loading** 💤: Utilizing **Lazy.nvim** for efficient plugin management, ensuring that plugins are loaded only when needed, resulting in a faster startup time.
+- **Blazing Fast Startup** ⚡: Optimized for speed using **lazy loading** plugins.
+- **Modern Aesthetics** 💅: Beautifully customized UI with hand-picked themes for a sleek coding experience.
+- **LSP-Powered IDE** 🔧: Full LSP support with smart autocompletion, diagnostics, and linting via `nvim-lspconfig`.
+- **Seamless Git Integration** 🛠️: Effortlessly manage your Git workflow with `vim-fugitive` and `gitsigns`.
+- **Powerful File Navigation** 📂: Speed up file searches with `telescope.nvim` and tree-based navigation using `nvim-tree`.
+- **Custom Statusline** 🌈: A stylish, informative statusline built with `lualine.nvim`.
+- **Intuitive Keybindings** ⌨️: Custom shortcuts designed for efficiency and ease of use.
+- **Plugin Management** 💤: Experience near-instant startup with `Lazy.nvim`, ensuring only necessary plugins load when needed.
 
-
-## 🚀 Getting Started
-
-Follow these steps to set up this Neovim configuration on your local machine:
+## 🚀 Quickstart Guide
 
 ### Prerequisites
 
-- [Neovim](https://neovim.io/) (v0.8.0 or higher)
+- [Neovim](https://neovim.io/) (v0.8.0+)
 - [Git](https://git-scm.com/)
-- A terminal emulator of your choice
+- Terminal emulator of your choice
 
 ### Installation
 
-1. Clone the repository:
+1. Clone this repo:
    ```bash
    git clone https://github.com/WAHYUAKHMADFADILLAH/neovim2049 ~/.config/nvim
    ```
 
-2. Install the plugins:
-   Launch Neovim and run the following command:
+2. Launch Neovim and install plugins:
    ```vim
    :Lazy Sync
    ```
 
-3. Ensure your environment supports the required dependencies like Node.js, Python, or Ruby for language server protocol (LSP) functionalities.
+3. Ensure your system supports required dependencies like Node.js, Python, or Ruby for LSP functionality.
 
-### 📦 Plugin Manager
+## 📦 Plugin Highlights
 
-This configuration uses Lazy.nvim for managing plugins. To install or update any plugin, simply run:
-```vim
-:Lazy sync
-```
+Key plugins that power this setup:
 
-## 🛠️ Key Plugins
+- **Lazy.nvim**: For managing and optimizing plugins
+- **nvim-lspconfig**: LSP support for intelligent code completion and diagnostics
+- **Telescope.nvim**: Fuzzy finder to rapidly search and access files
+- **Nvim-tree**: Visual file explorer
+- **Lualine.nvim**: Elegant statusline
+- **Gitsigns**: Git integration for enhanced version control
 
-Here are some of the key plugins that power this setup:
+## 🔥 Custom Key Mappings
 
+Effortless navigation with intuitive key mappings:
 
-```markdown
-## 📁 Directory Structure
+- **File Explorer** 📁:
+  - `<Leader>e`: Toggle `NvimTree`
+  - `<Leader>f`: Focus `NvimTree`
+  
+- **Saving & Quitting** 💾:
+  - `<C-s>`: Save file
+  - `<C-q>`: Quit
+
+- **Buffer & Window Management** 🧹:
+  - `<Tab>`: Next buffer, `<S-Tab>`: Previous buffer
+  - `<Leader>x`: Close buffer, `<Leader>b`: New buffer
+  - `<Leader>v`: Vertical split, `<Leader>h`: Horizontal split
+
+- **Search & Replace** 🔍:
+  - `<Leader>s`: Quick search and replace within file
+
+- **Diagnostics** 💡:
+  - `[d`, `]d`: Navigate diagnostics
+  - `<Leader>d`: Show floating diagnostics
+
+## 🗂️ Directory Structure
 
 ```
 ~/.config/nvim/
-├── .git
-└── lua
-    ├── core
-    │   ├── keymaps.lua      # Keybinding configurations
-    │   └── options.lua      # Neovim options
-    └── plugins
-        ├── alpha.lua        # Dashboard plugin
-        ├── autocompletion.lua  # Autocompletion settings
-        ├── bufferline.lua   # Bufferline for tab management
-        ├── colortheme.lua   # Colorscheme configurations
-        ├── comment.lua      # Commenting functionality
-        ├── gitsigns.lua     # Git integration plugin
-        ├── indent-blankline.lua  # Indentation guides
-        ├── lsp.lua          # Language Server Protocol settings
-        ├── lualine.lua      # Statusline configuration
-        ├── misc.lua         # Miscellaneous settings
-        ├── none-ls.lua      # Null-ls configuration
-        ├── nvimtree.lua     # File explorer configuration
-        ├── telescope.lua    # Fuzzy finder settings
-        └── treesitter.lua   # Treesitter configurations
+├── lua
+│   ├── core/
+│   └── plugins/
 ```
-For a complete list of plugins, check out the `plugins.lua` file.
 
-## 🧑‍💻 Custom Key Mappings
+- `core/keymaps.lua`: Keybinding configuration
+- `core/options.lua`: Neovim options
+- `plugins/`: Plugin-specific configurations
 
----
+## 🎨 Themes & Appearance
 
-# - Key Mappings and Configuration
-## 🎯 Key Features and Shortcuts
+I'm rocking the `rosepine` colorscheme! Feel free to change it by updating the `colortheme.lua` file with your preferred theme.
 
-### General Leader Key
+## 🛠 Contribution & Feedback
 
-- **Leader key**: Space (`<Leader>`)
-- **Local leader**: Space (`<LocalLeader>`)
-
-### 🗂 File Navigation
-
-- `<Leader>e` : Toggle **NvimTree** (file explorer)
-- `<Leader>f` : Focus on **NvimTree**
-- `<Leader>n` : Find the current file in **NvimTree**
-- `<Leader>c` : Collapse **NvimTree** directories
-
-### 💾 Save and Quit
-
-- `<C-s>` : Save current file
-- `<Leader>sn` : Save without triggering auto-formatting
-- `<C-q>` : Quit the current file
-
-### 🧹 Buffer and Window Management
-
-- **Buffers**:
-  - `<Tab>` : Go to next buffer
-  - `<S-Tab>` : Go to previous buffer
-  - `<Leader>x` : Close current buffer
-  - `<Leader>b` : Open a new buffer
-  
-- **Window Management**:
-  - `<Leader>v` : Split window vertically
-  - `<Leader>h` : Split window horizontally
-  - `<Leader>se` : Make split windows equal in size
-  - `<Leader>xs` : Close the current split window
-  
-- **Navigation**:
-  - `<C-h>`, `<C-j>`, `<C-k>`, `<C-l>` : Navigate between window splits
-
-### 🖥️ Tab Management
-
-- `<Leader>to` : Open a new tab
-- `<Leader>tx` : Close current tab
-- `<Leader>tn` : Go to next tab
-- `<Leader>tp` : Go to previous tab
-
-### 🔍 Search and Replace
-
-- `<Leader>s` : Quickly search and replace the word under the cursor in the entire file.
-
-### 🌟 Advanced Features
-
-- **Yank Highlight**: Highlight yanked (copied) text for better visual feedback.
-- **Resizing Windows**:
-  - Use arrow keys to adjust the size of the current window.
-  
-- **Diagnostics**:
-  - `[d` : Go to previous diagnostic message
-  - `]d` : Go to next diagnostic message
-  - `<Leader>d` : Open floating diagnostic window
-  - `<Leader>q` : Open diagnostics list
-
-### 🔧 Additional Handy Key Mappings
-
-- **Scroll and Center**: Vertical scroll (`<C-u>`, `<C-d>`) while keeping the cursor centered.
-- **Visual Mode Enhancements**:
-  - Stay in indent mode (`<`, `>`) while keeping selection.
-  - Keep last yanked item when pasting (`p`).
-
----
-
-This configuration is designed to be flexible and easy to extend. You can clone this repository and modify it to suit your specific workflow. Feel free to explore the `init.lua` file and customize further!
-
-Enjoy coding with Neovim! 🚀
-
----
-## 🎨 Themes and Appearance
-
-I'm using the `rosepine` colorscheme with a few tweaks to suit my personal taste. If you'd like to change the theme, simply update the `colorscheme` option in `colortheme.lua` with your favorite one.
-
-## 💬 Feedback & Contribution
-
-If you have any suggestions, issues, or improvements, feel free to open an [issue](https://github.com/WAHYUAKHMADFADILLAH/neovim2049/issues) or submit a pull request! I'd love to hear your feedback and ideas.
+Found a bug or have ideas for improvement? Feel free to open an [issue](https://github.com/WAHYUAKHMADFADILLAH/neovim2049/issues) or contribute via a pull request!
 
 ## 📜 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-cihuyyyyyy! 🚀
+Enjoy coding with style and speed! 🎉
