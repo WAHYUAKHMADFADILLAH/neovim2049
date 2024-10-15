@@ -4,6 +4,8 @@
 
 Welcome to my personal Neovim setup! 🎉 This repository is home to my custom configuration for Neovim, designed to boost productivity and make coding more enjoyable. It's heavily customized with plugins, key mappings, and features tailored for my workflow as a software developer and Linux enthusiast.
 
+---
+
 ## ✨ Features
 
 - **Lightning-fast startup** ⏩: Optimized for speed with lazy loading of plugins.
@@ -13,6 +15,9 @@ Welcome to my personal Neovim setup! 🎉 This repository is home to my custom c
 - **File Management** 📂: Fast file navigation with `telescope.nvim` and `nvim-tree`.
 - **Statusline** ⚡: Customized statusline using `lualine.nvim` for better visibility and style.
 - **Keybindings** ⌨️: Efficient key mappings to navigate, edit, and manage files faster.
+- **Lazy Loading** 💤: Utilizing **Lazy.nvim** for efficient plugin management, ensuring that plugins are loaded only when needed, resulting in a faster startup time.
+
+---
 
 ## 🚀 Getting Started
 
@@ -34,17 +39,16 @@ Follow these steps to set up this Neovim configuration on your local machine:
 2. Install the plugins:
    Launch Neovim and run the following command:
    ```vim
-   :PackerSync
+   :Lazy Sync
    ```
 
 3. Ensure your environment supports the required dependencies like Node.js, Python, or Ruby for language server protocol (LSP) functionalities.
 
-### Plugin Manager
+### 📦 Plugin Manager
 
-This configuration uses [Packer.nvim](https://github.com/wbthomason/packer.nvim) for managing plugins. To install or update any plugin, simply run:
-
+This configuration uses Lazy.nvim for managing plugins. To install or update any plugin, simply run:
 ```vim
-:PackerSync
+:Lazy sync
 ```
 
 ## 🛠️ Key Plugins
@@ -155,7 +159,7 @@ Enjoy coding with Neovim! 🚀
 ---
 ## 🎨 Themes and Appearance
 
-I'm using the `rosepine` colorscheme with a few tweaks to suit my personal taste. If you'd like to change the theme, simply update the `colorscheme` option in `init.lua` with your favorite one.
+I'm using the `rosepine` colorscheme with a few tweaks to suit my personal taste. If you'd like to change the theme, simply update the `colorscheme` option in `colortheme.lua` with your favorite one.
 
 ## 💬 Feedback & Contribution
 
