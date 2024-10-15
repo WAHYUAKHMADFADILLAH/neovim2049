@@ -53,7 +53,7 @@ This configuration uses Lazy.nvim for managing plugins. To install or update any
 
 Here are some of the key plugins that power this setup:
 
-```
+
 ```markdown
 ## 📁 Directory Structure
 
