@@ -4,7 +4,6 @@
 
 Welcome to my personal Neovim setup! 🎉 This repository is home to my custom configuration for Neovim, designed to boost productivity and make coding more enjoyable. It's heavily customized with plugins, key mappings, and features tailored for my workflow as a software developer and Linux enthusiast.
 
----
 
 ## ✨ Features
 
@@ -17,7 +16,6 @@ Welcome to my personal Neovim setup! 🎉 This repository is home to my custom c
 - **Keybindings** ⌨️: Efficient key mappings to navigate, edit, and manage files faster.
 - **Lazy Loading** 💤: Utilizing **Lazy.nvim** for efficient plugin management, ensuring that plugins are loaded only when needed, resulting in a faster startup time.
 
----
 
 ## 🚀 Getting Started
 
@@ -55,27 +53,27 @@ This configuration uses Lazy.nvim for managing plugins. To install or update any
 
 Here are some of the key plugins that power this setup:
 
+```
 .
-├── .git                   # Git configuration files
-└── lua                    # Lua configuration files
-    ├── core               # Core settings and configurations
-    └── plugins            # Plugin configurations
-        ├── alpha.lua      # Startup screen configuration
-        ├── autocompletion.lua # Autocompletion settings
-        ├── bufferline.lua  # Bufferline configuration
-        ├── colortheme.lua  # Color theme settings
-        ├── comment.lua     # Commenting functionality
-        ├── gitsigns.lua    # Git integration
-        ├── indent-blankline.lua # Indentation guides
-        ├── lsp.lua         # Language Server Protocol (LSP) settings
-        ├── lualine.lua     # Status line configuration
-        ├── misc.lua        # Miscellaneous settings
-        ├── none-ls.lua     # Non-LSP related configurations
-        ├── nvimtree.lua     # NvimTree file explorer settings
-        ├── telescope.lua    # Telescope (fuzzy finder) configuration
-        └── treesitter.lua   # Treesitter syntax highlighting
-
-
+├── .git
+└── lua
+    ├── core
+    └── plugins
+        ├── alpha.lua
+        ├── autocompletion.lua
+        ├── bufferline.lua
+        ├── colortheme.lua
+        ├── comment.lua
+        ├── gitsigns.lua
+        ├── indent-blankline.lua
+        ├── lsp.lua
+        ├── lualine.lua
+        ├── misc.lua
+        ├── none-ls.lua
+        ├── nvimtree.lua
+        ├── telescope.lua
+        └── treesitter.lua
+```
 For a complete list of plugins, check out the `plugins.lua` file.
 
 ## 🧑‍💻 Custom Key Mappings
