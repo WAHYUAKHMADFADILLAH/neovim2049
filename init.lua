@@ -26,4 +26,4 @@ require("lazy").setup({
 	require("plugins.misc"),
 	require("plugins.comment"),
 })
-vim.cmd("colorscheme rose-pine")
+vim.cmd("colorscheme moonfly")
