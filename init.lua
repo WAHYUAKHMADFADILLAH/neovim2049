@@ -1,3 +1,4 @@
+print("alhamdulillah")
 require("core.keymaps")
 require("core.options")
 -- install lazy
