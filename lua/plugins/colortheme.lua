@@ -4,8 +4,8 @@ return {
 		name = "rose-pine",
 		config = function()
 			require("rose-pine").setup({
-				disable_background = false,
-				-- disable_background = true,
+				-- disable_background = false,
+				disable_background = true,
 				styles = {
 					italic = false,
 				},
@@ -13,20 +13,26 @@ return {
 		end,
 	},
 	{
-		"ellisonleao/gruvbox.nvim",
-		name = "gruvbox",
+		"catppuccin/nvim",
+		name = "catppuccin",
 		config = function()
-			require("gruvbox").setup({
-				terminal_colors = true, -- add neovim terminal colors
-				undercurl = true,
-				underline = false,
-				bold = true,
-				italic = {
-					strings = false,
-					emphasis = false,
-					comments = false,
-					operators = false,
-					folds = false,
+			require("catppuccin").setup({
+				color_overrides = {
+					all = {
+						text = "#ffffff",
+					},
+					latte = {
+						base = "#000000",
+						mantle = "#000000",
+						crust = "#474747",
+					},
+					frappe = {},
+					macchiato = {
+						base = "#000000",
+						-- mantle = "#",
+						crust = "#000000",
+					},
+					mocha = {},
 				},
 			})
 		end,
@@ -34,8 +40,15 @@ return {
 	{
 		"bluz71/vim-moonfly-colors",
 		name = "moonfly",
-		lazy = false,
-		disable_background = true,
+		config = function()
+			require("rose-pine").setup({
+				-- disable_background = false,
+				disable_background = true,
+				styles = {
+					italic = false,
+				},
+			})
+		end,
 	},
 	{
 		"projekt0n/github-nvim-theme",

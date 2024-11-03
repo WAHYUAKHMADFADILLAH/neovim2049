@@ -1,4 +1,3 @@
-print("alhamdulillah")
 require("core.keymaps")
 require("core.options")
 -- install lazy
@@ -27,4 +26,4 @@ require("lazy").setup({
 	require("plugins.misc"),
 	require("plugins.comment"),
 })
-vim.cmd("colorscheme moonfly")
+vim.cmd("colorscheme catppuccin-macchiato")
