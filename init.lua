@@ -25,5 +25,6 @@ require("lazy").setup({
 	require("plugins.indent-blankline"),
 	require("plugins.misc"),
 	require("plugins.comment"),
+	require("plugins.emmet"),
 })
-vim.cmd("colorscheme catppuccin-macchiato")
+vim.cmd("colorscheme github_dark_high_contrast")
